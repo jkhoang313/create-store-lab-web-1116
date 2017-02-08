@@ -24,7 +24,6 @@ class UserInput extends Component {
 
   handleSubmit(event) {
     event.preventDefault()
-    console.log()
     this.props.store.dispatch({type: "ADD_USER", payload: {userName: this.state.userName, hometown: this.state.hometown}})
   }
 
